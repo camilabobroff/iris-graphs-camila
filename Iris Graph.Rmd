@@ -1,0 +1,26 @@
+---
+title: "Iris Graph"
+author: "Corinna Hong"
+date: "November 13, 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+
+library(tidyverse)
+
+```
+
+
+```{r}
+
+iris_scatter <- ggplot(iris, aes(x = Petal.Width, y = Petal.Length)) +
+  geom_point()
+iris_scatter
+
+```
+
