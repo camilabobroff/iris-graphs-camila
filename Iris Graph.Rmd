@@ -19,8 +19,8 @@ library(tidyverse)
 ```{r}
 
 iris_scatter <- ggplot(iris, aes(x = Petal.Width, y = Petal.Length)) +
-  geom_point()+
-  facet_wrap(~Species)+
+  geom_point(aes(color = Species))+
+  facet_wrap(~Species, scale = "free")+
   labs(x = "Petal Width", y = "Petal Length")
 iris_scatter
 
